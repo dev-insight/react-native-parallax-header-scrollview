@@ -3,11 +3,36 @@ import {
   View,
   Animated,
   Text,
-  Image
+  Image,
+  StyleSheet
 } from 'react-native';
 import ParallaxScrollView from 'react-native-parallax-header-scrollview';
 
-import image from './images/1491580936376.png'
+import image from './images/1491580936376.png';
+
+const styles = StyleSheet.create({
+  child: {
+    fontSize: 20,
+    marginLeft: 20
+  },
+  childContainer: {
+    borderBottomWidth: 1,
+    flex: 1,
+    height: 50,
+    justifyContent: 'center'
+  },
+  container: {
+    flex: 1
+  },
+  headerImageContainer: {
+    backgroundColor: 'black',
+    overflow: 'hidden',
+    height: 300
+  },
+  scrollViewContentStyle: {
+    backgroundColor: '#eeeeee'
+  }
+});
 
 export default class ParallaxScrollViewExample extends Component {
   constructor(props) {
@@ -18,7 +43,7 @@ export default class ParallaxScrollViewExample extends Component {
   }
   renderHeader = () => {
     return (
-      <View style={{ backgroundColor: 'black', overflow: 'hidden', height: 300 }}>
+      <View style={styles.headerImageContainer}>
         <Image source={image} />
       </View>
     )
@@ -30,9 +55,9 @@ export default class ParallaxScrollViewExample extends Component {
     const children = [];
     for (let i = 0; i < 40; i++) {
       children.push(
-        <View style={{ borderBottomWidth: 1, flex: 1, height: 40 }}>
-          <Text>
-            {`child ${i}`}
+        <View key={i} style={styles.childContainer}>
+          <Text style={styles.child}>
+            {`child ${i + 1}`}
           </Text>
         </View>
       )
@@ -42,13 +67,17 @@ export default class ParallaxScrollViewExample extends Component {
   }
   render() {
     return (
-      <View style={{ flex: 1 }}>
-        <ParallaxScrollView 
+      <View style={styles.container}>
+        <ParallaxScrollView
         onScroll={this.onScroll}
         renderHeader={this.renderHeader}
         parallaxMode={true}
         parallaxTranslation={100}
-        maxScrollPosition={200} 
+        maxScrollPosition={200}
+        scrollViewProps={{
+
+          contentContainerStyle: styles.scrollViewContentStyle
+        }}
         headerTranslation={-225}>
           {this.renderChildren()}
         </ParallaxScrollView>
