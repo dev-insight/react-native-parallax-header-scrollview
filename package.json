@@ -1,0 +1,28 @@
+{
+  "name": "react-native-sticky-header-scrollview",
+  "version": "1.0.0",
+  "description": "A scrollview with parallax sticky header using native driver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-native": "^0.49.5"
+  },
+  "keywords": [
+    "react-native",
+    "reactnative",
+    "react",
+    "parallax",
+    "sticky header",
+    "stickyheader",
+    "sticky",
+    "header",
+    "scrollview",
+    "scroll"
+  ]
+}
