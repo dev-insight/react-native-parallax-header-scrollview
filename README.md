@@ -2,4 +2,6 @@
 
 A fluid parallax sticky header scroll view.
 
-![Demo](./example/parallax-header/screen_capture/parallax_header.gif)
+![Demo IOS](./example/parallax-header/screen_capture/parallax_header.gif)
+
+![Demo Android](./example/parallax-header/screen_capture/parallax_header_android.gif)
