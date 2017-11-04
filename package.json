@@ -1,6 +1,6 @@
 {
   "name": "react-native-parallax-header-scrollview",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A scrollview with parallax sticky header using native driver",
   "main": "index.js",
   "scripts": {
@@ -31,10 +31,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rouflak/react-native-parallax-header-scrollview.git"
+    "url": "git+https://github.com/dev-insight/react-native-parallax-header-scrollview.git"
   },
   "bugs": {
-    "url": "https://github.com/rouflak/react-native-parallax-header-scrollview/issues"
+    "url": "https://github.com/dev-insight/react-native-parallax-header-scrollview.git/issues"
   },
-  "homepage": "https://github.com/rouflak/react-native-parallax-header-scrollview#readme"
+  "homepage": "https://github.com/dev-insight/react-native-parallax-header-scrollview.git#readme"
 }
