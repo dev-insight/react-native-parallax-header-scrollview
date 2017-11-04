@@ -1,6 +1,6 @@
 {
   "name": "react-native-parallax-header-scrollview",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A scrollview with parallax sticky header using native driver",
   "main": "index.js",
   "scripts": {
