@@ -23,3 +23,6 @@ The scrollview is easy to configure. You have the control of the animations!
 |`renderHeader`|`PropTypes.func.isRequired`||A function to render the header.|
 |`onScroll`|`PropTypes.func`||A callback to listen to the scroll event. Be aware that a `Animated.Scrollview` is used, so it's using the animated driver. As an example, you won't be able to act on the height of a component|
 |`stickyHeader`|`PropTypes.bool`|`true`|If you don't want a sticky header, set it to `false` (we recommend you to use a regular scrollview instead)|
+
+## Contribution
+Help us to improve this lib with your feedback. Feel free to create an issue if you have any improvement suggestion.
